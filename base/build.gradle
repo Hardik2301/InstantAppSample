@@ -1,8 +1,8 @@
 apply plugin: 'com.android.feature'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.0'
     baseFeature true
     defaultConfig {
         minSdkVersion 23
@@ -21,9 +21,8 @@ android {
 dependencies {
     application project(':app')
     feature project(':login')
-    implementation 'com.android.support:appcompat-v7:25.+'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     //implementation 'com.google.android.instantapps:instantapps:1.0.0'
-
     feature project(":register")
+    implementation 'com.android.support:appcompat-v7:27.0.0'
 }
